@@ -7,8 +7,18 @@ namespace SO
     {
         [SerializeField] private int _armor;
         [SerializeField] private int _health;
-        [SerializeField] private int _attackPower;
-        [SerializeField] private int _attackDelay;
-        [SerializeField] private int _spawnChance;
+        [SerializeField] private int _damage;
+        [SerializeField] private float _attackDelay;
+        [SerializeField] private float _spawnChance;
+
+        public int Armor => _armor;
+
+        public int Health => _health;
+
+        public int Damage => _damage;
+
+        public float AttackDelay => _attackDelay;
+
+        public float SpawnChance => _spawnChance;
     }
 }
