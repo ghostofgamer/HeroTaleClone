@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Player
+namespace PlayerContent
 {
     public class PlayerDeath : MonoBehaviour
     {
@@ -18,6 +18,7 @@ namespace Player
 
         private void Die()
         {
+            Debug.Log("PlayerDeath");
         }
     }
 }

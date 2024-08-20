@@ -1,8 +1,10 @@
+using System.Collections;
+using EnemyContent;
 using Interfaces;
 using SO;
 using UnityEngine;
 
-namespace Player
+namespace PlayerContent
 {
     [RequireComponent(typeof(MainPlayer))]
     public class PlayerAttack : MonoBehaviour, IAttackable
@@ -13,19 +15,9 @@ namespace Player
         [SerializeField] private Spawner _spawner;
 
         private float _delay;
-        private float _damage;
-        // private Enemy _enemy;
+        private int _damage;
 
         private MainPlayer _player;
-/*private void OnEnable()
-{
-    _spawner.EnemySpawned += Initialization;
-}
-
-private void OnDisable()
-{
-    _spawner.EnemySpawned -= Initialization;
-}*/
 
         private void Start()
         {
@@ -38,6 +30,22 @@ private void OnDisable()
         {
             if (_player.Enemy == null)
                 return;
+
+            StartCoroutine(Attack());
+        }
+
+        private IEnumerator Attack()
+        {
+            while (_player.Enemy.GetComponent<EnemyHealth>().CurrentHealth > 0)
+            {
+                yield return new WaitForSeconds(_delay);
+                _playerAttack.SetActive(true);
+                _playerIdle.SetActive(false);
+                _player.Enemy.GetComponent<EnemyHealth>().TakeDamage(_damage);
+                yield return new WaitForSeconds(_delay);
+                _playerAttack.SetActive(false);
+                _playerIdle.SetActive(true);
+            }
         }
     }
 }

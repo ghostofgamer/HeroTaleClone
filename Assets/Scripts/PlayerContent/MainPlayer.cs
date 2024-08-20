@@ -1,6 +1,7 @@
+using EnemyContent;
 using UnityEngine;
 
-namespace Player
+namespace PlayerContent
 {
     public class MainPlayer : MonoBehaviour
     {

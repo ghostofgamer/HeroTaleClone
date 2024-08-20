@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
-using Player;
+using EnemyContent;
+using PlayerContent;
+using SO;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -11,6 +13,8 @@ public class Spawner : MonoBehaviour
     [SerializeField] private GameObject _overBattleButton;
     [SerializeField] private MainPlayer _player;
 
+    private Enemy _currentEnemy;
+    
     public event Action<Enemy> EnemySpawned;
 
     private void Start()
@@ -40,18 +44,12 @@ public class Spawner : MonoBehaviour
 
             if (randomValue <= cumulativeChance)
             {
-                enemy.gameObject.SetActive(true);
-                _overBattleButton.SetActive(true);
-                _player.InitEnemy(enemy);
-                // EnemySpawned?.Invoke(enemy);
+                _currentEnemy = enemy;
                 return;
             }
         }
 
-        _enemies[0].gameObject.SetActive(true);
-        _player.InitEnemy( _enemies[0]);
-        // EnemySpawned?.Invoke(_enemies[0]);
-        _overBattleButton.SetActive(true);
+        _currentEnemy = _enemies[0];
     }
 
     public void StartSearch()
@@ -62,11 +60,21 @@ public class Spawner : MonoBehaviour
         StartCoroutine(SearchEnemy());
     }
 
+    private void Initialization()
+    {
+        _player.InitEnemy(_currentEnemy);
+        _currentEnemy.gameObject.SetActive(true);
+        _currentEnemy.InitPlayer(_player);
+            _player.GetComponent<PlayerAttack>().ApplyAttack();
+            _currentEnemy.GetComponent<EnemyAttack>().ApplyAttack();
+    }
+
     private IEnumerator SearchEnemy()
     {
         _loupe.gameObject.SetActive(true);
         yield return new WaitForSeconds(3f);
         _loupe.gameObject.SetActive(false);
         SpawnEnemy();
+        Initialization();
     }
 }

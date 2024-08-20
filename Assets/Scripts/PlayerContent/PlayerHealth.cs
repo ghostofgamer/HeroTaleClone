@@ -2,23 +2,25 @@ using System;
 using SO;
 using UnityEngine;
 
-namespace Player
+namespace PlayerContent
 {
     public class PlayerHealth : MonoBehaviour
     {
         [SerializeField] private CharacterData _characterData;
 
         private int _health;
-        private int _currentHealth;
-
+        
         public event Action Died;
-        public event Action<int,int> HealthChanged;
+        
+        public event Action<int, int> HealthChanged;
+        
+        public int CurrentHealth { get; private set; }
 
         private void Start()
         {
             _health = _characterData.Health;
-            _currentHealth = _health;
-            HealthChanged?.Invoke(_health, _currentHealth);
+            CurrentHealth = _health;
+            HealthChanged?.Invoke(_health, CurrentHealth);
         }
 
         public void TakeDamage(int damage)
@@ -26,10 +28,10 @@ namespace Player
             if (damage <= 0 || damage - _characterData.Armor <= 0)
                 return;
 
-            _currentHealth -= (damage - _characterData.Armor);
-            HealthChanged?.Invoke(_health, _currentHealth);
-            
-            if (_currentHealth <= 0)
+            CurrentHealth -= (damage - _characterData.Armor);
+            HealthChanged?.Invoke(_health, CurrentHealth);
+
+            if (CurrentHealth <= 0)
                 Died?.Invoke();
         }
     }

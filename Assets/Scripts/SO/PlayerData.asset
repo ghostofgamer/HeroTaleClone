@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   _armor: 1
-  _health: 10
-  _attackPower: 1
-  _attackDelay: 3
+  _health: 100
+  _damage: 3
+  _attackDelay: 1
