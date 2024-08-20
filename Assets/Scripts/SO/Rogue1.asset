@@ -16,4 +16,4 @@ MonoBehaviour:
   _health: 6
   _damage: 3
   _attackDelay: 3
-  _spawnChance: 0.5
+  _spawnChance: 0.3
