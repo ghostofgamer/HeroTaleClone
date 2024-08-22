@@ -9,6 +9,7 @@ namespace Test
         public override void OnClick()
         {
             _spawner.StartSearch();
+            gameObject.SetActive(false);
         }
     }
 }

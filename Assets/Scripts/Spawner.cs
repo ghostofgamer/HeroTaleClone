@@ -12,6 +12,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private GameObject _loupe;
     [SerializeField] private GameObject _overBattleButton;
     [SerializeField] private MainPlayer _player;
+    [SerializeField]private StageUI _stageUI;
 
     public Enemy CurrentEnemy { get; private set; }
 
@@ -54,6 +55,7 @@ public class Spawner : MonoBehaviour
 
     public void StartSearch()
     {
+        _stageUI.SearchStage();
         foreach (var enemy in _enemies)
             enemy.gameObject.SetActive(false);
 
@@ -67,6 +69,7 @@ public class Spawner : MonoBehaviour
         CurrentEnemy.InitPlayer(_player,this);
         _player.GetComponent<PlayerAttack>().ApplyAttack();
         CurrentEnemy.GetComponent<EnemyAttack>().ApplyAttack();
+        _stageUI.BattleStage();
     }
 
     private IEnumerator SearchEnemy()

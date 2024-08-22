@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eab24c28-ae08-44a0-96a2-074a5767ee1c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HeroTaleClone/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HeroTaleClone/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HeroTaleClone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HeroTaleClone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetsDownloads/COPY SPRIGHT/Comic Battle Royale/2D Character - Astronaut/Variant A/Animations/scythe_attack_side-overlay.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetsDownloads/COPY SPRIGHT/Comic Battle Royale/2D Character - Astronaut/Variant A/Animations/scythe_attack_side-overlay.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetsDownloads/COPY SPRIGHT/Comic Battle Royale/2D Character - Astronaut/Variant A/Animations/scythe_attack_side.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetsDownloads/COPY SPRIGHT/Comic Battle Royale/2D Character - Astronaut/Variant A/Animations/scythe_attack_side.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetsDownloads/COPY SPRIGHT/Comic Battle Royale/2D Character - Astronaut/Variant A/Animations/weapon_scythe_side.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetsDownloads/COPY SPRIGHT/Comic Battle Royale/2D Character - Astronaut/Variant A/Animations/weapon_scythe_side.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/1SceneBattle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1SceneBattle.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyContent/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyContent/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyContent/EnemyAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyContent/EnemyAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyContent/EnemyDeath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyContent/EnemyDeath.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerDeath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerDeath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/PlayerData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/PlayerData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Rogue1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/Rogue1.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Rogue2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/Rogue2.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Rogue3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/Rogue3.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test/SpawnButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Test/SpawnButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/OverBattleButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/OverBattleButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/RecoveryHealthButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/RecoveryHealthButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/StartBattleButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/StartBattleButton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +34,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/RecoveryHealthButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Initializator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StageUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Screens/AbstractScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OverBattle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/OverBattleButton.cs" root0="FORCE_HIGHLIGHTING" />
@@ -50,8 +46,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/CharacterData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/EnemyData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IAttackable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Test/SpawnButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/StartBattleButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/MainPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHealth.cs" />
@@ -74,9 +68,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerDeath.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/RecoveryHealthButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OverBattle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StageUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/StartBattleButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Test/SpawnButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/OverBattleButton.cs" />
       </list>
     </option>
@@ -121,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724144741618</updated>
       <workItem from="1724144750869" duration="15348000" />
-      <workItem from="1724313528252" duration="4347000" />
+      <workItem from="1724313528252" duration="5165000" />
     </task>
     <servers />
   </component>

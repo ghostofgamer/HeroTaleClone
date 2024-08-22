@@ -16,8 +16,8 @@ namespace PlayerContent
         [SerializeField] private GameObject _stateAttack;
         [SerializeField] private Image _imageStateAttack;
         [SerializeField] private Image _imageStateIdle;
-        
-        
+
+
         [SerializeField] private CharacterData _characterData;
         [SerializeField] private Spawner _spawner;
 
@@ -38,17 +38,15 @@ namespace PlayerContent
         {
             if (_player.Enemy == null)
                 return;
-            
+
             _isAttack = true;
             StartCoroutine(Attack());
         }
 
         private IEnumerator Attack()
         {
-            while (_player.Enemy.GetComponent<EnemyHealth>().CurrentHealth > 0&&_isAttack)
+            while (_player.Enemy.GetComponent<EnemyHealth>().CurrentHealth > 0 && _isAttack)
             {
-                Debug.Log("ываываываываываыаыаыа");
-                
                 float elapsedTime = 0;
                 _imageStateIdle.fillAmount = 0;
                 float targetFillAmount = 1f;
@@ -58,7 +56,7 @@ namespace PlayerContent
                     _imageStateIdle.fillAmount = Mathf.Lerp(0, targetFillAmount, elapsedTime / _delay);
                     yield return null;
                 }
-                
+
                 _imageStateIdle.fillAmount = targetFillAmount;
 
 
@@ -70,20 +68,20 @@ namespace PlayerContent
                 _player.Enemy.GetComponent<EnemyHealth>().TakeDamage(_damage);
 
                 elapsedTime = 0;
-                 _imageStateAttack.fillAmount = 0;
-                 targetFillAmount = 1f;
+                _imageStateAttack.fillAmount = 0;
+                targetFillAmount = 1f;
                 while (elapsedTime < _delay)
                 {
                     elapsedTime += Time.deltaTime;
                     _imageStateAttack.fillAmount = Mathf.Lerp(0, targetFillAmount, elapsedTime / _delay);
                     yield return null;
                 }
-                
+
                 _imageStateAttack.fillAmount = targetFillAmount;
 
                 // yield return new WaitForSeconds(_delay);
-                
-                
+
+
                 _playerAttack.SetActive(false);
                 _stateAttack.SetActive(false);
                 _playerIdle.SetActive(true);
@@ -93,7 +91,6 @@ namespace PlayerContent
 
         public void StopAttack()
         {
-            Debug.Log("StopAttack");
             _isAttack = false;
             StopCoroutine(Attack());
             _playerAttack.SetActive(false);

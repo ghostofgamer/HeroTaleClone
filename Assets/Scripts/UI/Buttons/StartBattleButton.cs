@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class StartBattleButton : AbstractionButton
 {
+    
+    
     public override void OnClick()
     {
         
