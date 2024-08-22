@@ -7,7 +7,10 @@ namespace EnemyContent
     public class Enemy : MonoBehaviour
     {
         [SerializeField] private EnemyData _enemyData;
+        [SerializeField]private Spawner _spawner;
         [SerializeField]private EnemyHealth _enemyHealth;
+
+        public Spawner Spawner => _spawner;
         
         public float SpawnChance { get; private set; }
 
@@ -19,9 +22,10 @@ namespace EnemyContent
             // _enemyHealth.Init();
         }
 
-        public void InitPlayer(MainPlayer player)
+        public void InitPlayer(MainPlayer player,Spawner spawner)
         {
             Player = player;
+            _spawner = spawner;
         }
     }
 }

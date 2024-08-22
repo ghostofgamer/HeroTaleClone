@@ -5,6 +5,7 @@ namespace PlayerContent
     public class PlayerDeath : MonoBehaviour
     {
         [SerializeField] private PlayerHealth _playerHealth;
+        [SerializeField] private PlayerAttack _playerAttack;
 
         private void OnEnable()
         {
@@ -18,7 +19,7 @@ namespace PlayerContent
 
         private void Die()
         {
-            Debug.Log("PlayerDeath");
+            gameObject.SetActive(false);
         }
     }
 }

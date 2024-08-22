@@ -1,11 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
+using PlayerContent;
 using UnityEngine;
 
-public class RecoveryHealthButton : AbstractionButton
+namespace UI.Buttons
 {
-    public override void OnClick()
+    public class RecoveryHealthButton : AbstractionButton
     {
-        
+        [SerializeField] private PlayerHealth _playerHealth;
+    
+        public override void OnClick()
+        {
+            _playerHealth.HealHealth();
+        }
     }
 }

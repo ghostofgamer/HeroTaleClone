@@ -13,8 +13,8 @@ public class Spawner : MonoBehaviour
     [SerializeField] private GameObject _overBattleButton;
     [SerializeField] private MainPlayer _player;
 
-    private Enemy _currentEnemy;
-    
+    public Enemy CurrentEnemy { get; private set; }
+
     public event Action<Enemy> EnemySpawned;
 
     private void Start()
@@ -44,12 +44,12 @@ public class Spawner : MonoBehaviour
 
             if (randomValue <= cumulativeChance)
             {
-                _currentEnemy = enemy;
+                CurrentEnemy = enemy;
                 return;
             }
         }
 
-        _currentEnemy = _enemies[0];
+        CurrentEnemy = _enemies[0];
     }
 
     public void StartSearch()
@@ -62,11 +62,11 @@ public class Spawner : MonoBehaviour
 
     private void Initialization()
     {
-        _player.InitEnemy(_currentEnemy);
-        _currentEnemy.gameObject.SetActive(true);
-        _currentEnemy.InitPlayer(_player);
-            _player.GetComponent<PlayerAttack>().ApplyAttack();
-            _currentEnemy.GetComponent<EnemyAttack>().ApplyAttack();
+        _player.InitEnemy(CurrentEnemy);
+        CurrentEnemy.gameObject.SetActive(true);
+        CurrentEnemy.InitPlayer(_player,this);
+        _player.GetComponent<PlayerAttack>().ApplyAttack();
+        CurrentEnemy.GetComponent<EnemyAttack>().ApplyAttack();
     }
 
     private IEnumerator SearchEnemy()

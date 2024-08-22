@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Vadim\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Vadim\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_HeroTaleClone.-606580058.00" t="ExcludeRecursive" />
+    <e p="D:\Repository\HeroTaleClone" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Animations" t="Include">
+          <e p="Player" t="Include" />
+        </e>
+        <e p="AssetsDownloads" t="Include">
+          <e p="2D Zombie" t="Include">
+            <e p="Background" t="Include" />
+            <e p="Demo" t="Include" />
+            <e p="PSD file" t="Include" />
+            <e p="ReadMe.txt" t="Include" />
+            <e p="Shader" t="Include">
+              <e p="Spine-Skeleton.shader" t="Include" />
+            </e>
+            <e p="Spine2D Animations Exports" t="Include">
+              <e p="Zombie_Normal.atlas.txt" t="Include" />
+              <e p="Zombie_Normal.json" t="Include" />
+            </e>
+            <e p="Spine2D Files" t="Include">
+              <e p="images" t="Include" />
+            </e>
+            <e p="Unity Native Animations" t="Include">
+              <e p="Baked" t="Include" />
+              <e p="Zombie_Normal.atlas.txt" t="Include" />
+              <e p="Zombie_Normal.json" t="Include" />
+            </e>
+          </e>
+          <e p="COPY SPRIGHT" t="Include">
+            <e p="Comic Battle Royale" t="Include">
+              <e p="2D Character - Astronaut" t="Include">
+                <e p="Documentation.txt" t="Include" />
+                <e p="Variant A" t="Include">
+                  <e p="Animations" t="Include" />
+                  <e p="Prefabs" t="Include">
+                    <e p="Character" t="Include" />
+                    <e p="Objects" t="Include" />
+                    <e p="Tilemap" t="Include" />
+                  </e>
+                  <e p="Sprites" t="Include">
+                    <e p="Character" t="Include">
+                      <e p="bomb_hold" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="side-overlay" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="bomb_throw" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="bomb_walk" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="side-hand" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="bow" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="down-streched-overlay" t="Include" />
+                        <e p="down-unstreched-overlay" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="side-streched-overlay" t="Include" />
+                        <e p="side-unstreched-overlay" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="bow_walk" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="down-streched-overlay" t="Include" />
+                        <e p="down-unstreched-overlay" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="side-streched-overlay" t="Include" />
+                        <e p="side-unstreched-overlay" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="crawl" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="duck" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="gun" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="side-overlay" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="gun_walk" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="side-overlay" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="hammer_attack" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="down_overlay" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="side-overlay" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="hammer_idle" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="down_overlay" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="side-overlay" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="hit_A" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="hit_B" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="idle" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="jump" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="rifle" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="side-overlay" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="rifle_walk" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="side-overlay" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="run" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="scythe_attack" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="down-overlay" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="side-overlay" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="scythe_idle" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="down-overlay" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="side-overlay" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="slide" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="sword_attack" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="down-overlay" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="side-overlay" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="sword_idle" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="down-overlay" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="side-overlay" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                      <e p="vanish" t="Include" />
+                      <e p="walk" t="Include">
+                        <e p="down" t="Include" />
+                        <e p="side" t="Include" />
+                        <e p="up" t="Include" />
+                      </e>
+                    </e>
+                    <e p="General" t="Include">
+                      <e p="Bomb" t="Include" />
+                      <e p="Effects" t="Include">
+                        <e p="Bullets" t="Include">
+                          <e p="Arrow" t="Include" />
+                          <e p="gun" t="Include" />
+                          <e p="rifle" t="Include" />
+                        </e>
+                        <e p="Char_Shadow" t="Include" />
+                        <e p="Explosion" t="Include" />
+                        <e p="Muzzle_Flash" t="Include">
+                          <e p="gun" t="Include" />
+                          <e p="rifle" t="Include" />
+                        </e>
+                      </e>
+                      <e p="Weapons" t="Include">
+                        <e p="bow" t="Include">
+                          <e p="streched-side" t="Include" />
+                          <e p="streched_down" t="Include" />
+                          <e p="streched_up" t="Include" />
+                          <e p="unstreched-down" t="Include" />
+                          <e p="unstreched-side" t="Include" />
+                          <e p="unstreched-up" t="Include" />
+                        </e>
+                        <e p="gun" t="Include">
+                          <e p="down" t="Include" />
+                          <e p="side" t="Include" />
+                          <e p="up" t="Include" />
+                        </e>
+                        <e p="Hammer" t="Include">
+                          <e p="down" t="Include" />
+                          <e p="side" t="Include" />
+                          <e p="up" t="Include" />
+                        </e>
+                        <e p="rifle" t="Include">
+                          <e p="down" t="Include" />
+                          <e p="side" t="Include" />
+                          <e p="up" t="Include" />
+                        </e>
+                        <e p="Scythe" t="Include">
+                          <e p="down" t="Include" />
+                          <e p="side" t="Include" />
+                          <e p="up" t="Include" />
+                        </e>
+                        <e p="Sword" t="Include">
+                          <e p="down" t="Include" />
+                          <e p="side" t="Include" />
+                          <e p="up" t="Include" />
+                        </e>
+                      </e>
+                    </e>
+                    <e p="Tilemap" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Ghost_with_Axe" t="Include">
+            <e p="Animations" t="Include">
+              <e p="Ghost1" t="Include">
+                <e p="Others" t="Include" />
+              </e>
+              <e p="Ghost2" t="Include">
+                <e p="Others" t="Include" />
+              </e>
+            </e>
+            <e p="Documentation.txt" t="Include" />
+            <e p="Prefabs" t="Include" />
+            <e p="Scenes" t="Include" />
+            <e p="Sprites" t="Include" />
+          </e>
+          <e p="Mighty Heroes (Rogue) 2D Fantasy Characters Pack" t="Include">
+            <e p="Animations" t="Include">
+              <e p="Rogue_animations" t="Include" />
+            </e>
+            <e p="Prefabs" t="Include" />
+            <e p="Rogue" t="Include" />
+            <e p="Weapons" t="Include" />
+          </e>
+          <e p="omiStudio" t="Include">
+            <e p="Enemy Cow" t="Include">
+              <e p="Art" t="Include">
+                <e p="Animations" t="Include">
+                  <e p="Cow" t="Include">
+                    <e p="Cow1" t="Include" />
+                    <e p="Cow2" t="Include" />
+                  </e>
+                </e>
+                <e p="Sprits" t="Include">
+                  <e p="Cow" t="Include" />
+                </e>
+              </e>
+              <e p="Documentation" t="Include">
+                <e p="Document.txt" t="Include" />
+              </e>
+              <e p="Prefabs" t="Include" />
+              <e p="Scenes" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="SetStateAnimation.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Orc Warrior" t="Include">
+            <e p="Animations" t="Include" />
+            <e p="Art" t="Include" />
+            <e p="Prefabs" t="Include" />
+            <e p="Scenes" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="MouseController.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Prefabs" t="Include">
+          <e p="Enemys" t="Include" />
+          <e p="Player" t="Include" />
+        </e>
+        <e p="Scenes" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="EnemyContent" t="Include">
+            <e p="Enemy.cs" t="Include" />
+            <e p="EnemyAttack.cs" t="Include" />
+            <e p="EnemyDeath.cs" t="Include" />
+            <e p="EnemyHealth.cs" t="Include" />
+            <e p="EnemyHealthView.cs" t="Include" />
+          </e>
+          <e p="FightContent" t="Include" />
+          <e p="Initializator.cs" t="Include" />
+          <e p="Interfaces" t="Include">
+            <e p="IAttackable.cs" t="Include" />
+          </e>
+          <e p="OverBattle.cs" t="Include" />
+          <e p="PlayerAnmimation.cs" t="Include" />
+          <e p="PlayerContent" t="Include">
+            <e p="MainPlayer.cs" t="Include" />
+            <e p="PlayerAttack.cs" t="Include" />
+            <e p="PlayerDeath.cs" t="Include" />
+            <e p="PlayerHealth.cs" t="Include" />
+            <e p="PlayerHealthView.cs" t="Include" />
+          </e>
+          <e p="SO" t="Include">
+            <e p="CharacterData.cs" t="Include" />
+            <e p="EnemyData.cs" t="Include" />
+          </e>
+          <e p="Spawner.cs" t="Include" />
+          <e p="Test" t="Include">
+            <e p="SpawnButton.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="Buttons" t="Include">
+              <e p="AbstractionButton.cs" t="Include" />
+              <e p="MapSelectionButton.cs" t="Include" />
+              <e p="OverBattleButton.cs" t="Include" />
+              <e p="RecoveryHealthButton.cs" t="Include" />
+              <e p="StartBattleButton.cs" t="Include" />
+            </e>
+            <e p="Screens" t="Include">
+              <e p="AbstractScreen.cs" t="Include" />
+              <e p="GameOverScreen.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Sound" t="Include" />
+        <e p="Sprites" t="Include">
+          <e p="Background" t="Include" />
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Documentation" t="Include" />
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="Fonts &amp; Materials" t="Include" />
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Sprite Assets" t="Include" />
+            <e p="Style Sheets" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+            <e p="EmojiOne.json" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="HeroTaleClone.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

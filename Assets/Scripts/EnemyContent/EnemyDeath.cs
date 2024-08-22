@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace EnemyContent
@@ -5,6 +6,8 @@ namespace EnemyContent
     public class EnemyDeath : MonoBehaviour
     {
         [SerializeField] private EnemyHealth _enemyHealth;
+
+        private Enemy _enemy;
 
         private void OnEnable()
         {
@@ -16,9 +19,14 @@ namespace EnemyContent
             _enemyHealth.Died -= Die;
         }
 
+        private void Start()
+        {
+            _enemy = GetComponent<Enemy>();
+        }
+
         private void Die()
         {
-            Debug.Log("PlayerDeath");
+            _enemy.Spawner.StartSearch();
         }
     }
 }

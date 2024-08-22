@@ -34,5 +34,11 @@ namespace PlayerContent
             if (CurrentHealth <= 0)
                 Died?.Invoke();
         }
+
+        public void HealHealth()
+        {
+            CurrentHealth = _characterData.Health;
+            HealthChanged?.Invoke(_health, CurrentHealth);
+        }
     }
 }
