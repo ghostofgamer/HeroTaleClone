@@ -306,7 +306,13 @@
         </e>
         <e p="Prefabs" t="Include">
           <e p="Enemys" t="Include" />
-          <e p="Player" t="Include" />
+          <e p="Player" t="Include">
+            <e p="Animations" t="Include">
+              <e p="AttackScythe" t="Include" />
+              <e p="BowAttack" t="Include" />
+              <e p="IdleSkythe" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">

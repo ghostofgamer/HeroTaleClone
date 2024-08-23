@@ -4,9 +4,24 @@
     <list default="true" id="eab24c28-ae08-44a0-96a2-074a5767ee1c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HeroTaleClone/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HeroTaleClone/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HeroTaleClone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HeroTaleClone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetsDownloads/COPY SPRIGHT/Comic Battle Royale/2D Character - Astronaut/Variant A/Animations/bow_side-overlay.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetsDownloads/COPY SPRIGHT/Comic Battle Royale/2D Character - Astronaut/Variant A/Animations/bow_side-overlay.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetsDownloads/COPY SPRIGHT/Comic Battle Royale/2D Character - Astronaut/Variant A/Animations/weapon_bow_side.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetsDownloads/COPY SPRIGHT/Comic Battle Royale/2D Character - Astronaut/Variant A/Animations/weapon_bow_side.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1SceneBattle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1SceneBattle.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/03.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/03.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/04.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/04.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/05.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/05.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/06.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/06.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/07.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/07.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/08.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/08.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/09.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/09.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/14.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/AttackScythe/14.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/BowAttack/1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/BowAttack/1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/BowAttack/2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/BowAttack/2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/GameObject.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Animations/GameObject.controller.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerAttack.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,8 +88,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ChangeWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ChangeWeaponButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponChanger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/WeaponChangerButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerAttack.cs" />
       </list>
     </option>
   </component>
@@ -119,6 +134,7 @@
       <updated>1724144741618</updated>
       <workItem from="1724144750869" duration="15348000" />
       <workItem from="1724313528252" duration="10991000" />
+      <workItem from="1724421194412" duration="2137000" />
     </task>
     <servers />
   </component>

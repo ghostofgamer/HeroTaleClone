@@ -4822,9 +4822,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360732129}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.6, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.48, y: -7.57, z: 0}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1831971618}
@@ -4870,7 +4870,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3a110adf6e1026d46b4dc188b3df750c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3f9e160de2c4a0d4698566ab2d7ba23c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -6123,7 +6123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8198903906866881868, guid: ca25028ed163a6b468d46de8cd19cbc7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7057,7 +7057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8430462691467886969, guid: dc73d78e12637694cb771ace825e852d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8430462691467886974, guid: dc73d78e12637694cb771ace825e852d, type: 3}
       propertyPath: m_SortingOrder
@@ -7157,6 +7157,7 @@ MonoBehaviour:
   _characterData: {fileID: 11400000, guid: 28dcd164afa1dce4ca33e56948a0e413, type: 2}
   _spawner: {fileID: 14587703}
   _gameObjectReload: {fileID: 1079128418}
+  _animator: {fileID: 1360732132}
 --- !u!114 &1831971623
 MonoBehaviour:
   m_ObjectHideFlags: 0
