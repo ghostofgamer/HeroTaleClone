@@ -4,16 +4,10 @@
     <list default="true" id="eab24c28-ae08-44a0-96a2-074a5767ee1c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HeroTaleClone/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HeroTaleClone/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HeroTaleClone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HeroTaleClone/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetsDownloads/COPY SPRIGHT/Comic Battle Royale/2D Character - Astronaut/Variant A/Animations/bow_side-overlay.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetsDownloads/COPY SPRIGHT/Comic Battle Royale/2D Character - Astronaut/Variant A/Animations/bow_side-overlay.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetsDownloads/COPY SPRIGHT/Comic Battle Royale/2D Character - Astronaut/Variant A/Animations/weapon_bow_side.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetsDownloads/COPY SPRIGHT/Comic Battle Royale/2D Character - Astronaut/Variant A/Animations/weapon_bow_side.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/1SceneBattle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1SceneBattle.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/PlayerData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/PlayerData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Rogue1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/Rogue1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Rogue2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/Rogue2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Rogue3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/Rogue3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Test/SpawnButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Test/SpawnButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/OverBattleButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/OverBattleButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/StartBattleButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/StartBattleButton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +27,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SO/EnemyData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/RecoveryHealthButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Initializator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponChanger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Buttons/WeaponChangerButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StageUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Screens/AbstractScreen.cs" root0="FORCE_HIGHLIGHTING" />
@@ -69,12 +65,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/RecoveryHealthButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/OverBattle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerAttack.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StageUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/StartBattleButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test/SpawnButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/OverBattleButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StageUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ChangeWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/ChangeWeaponButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Buttons/WeaponChangerButton.cs" />
       </list>
     </option>
   </component>
@@ -118,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724144741618</updated>
       <workItem from="1724144750869" duration="15348000" />
-      <workItem from="1724313528252" duration="5165000" />
+      <workItem from="1724313528252" duration="10991000" />
     </task>
     <servers />
   </component>
@@ -135,9 +135,9 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="616" y="238" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1724314989168" />
-    <state x="623" y="223" key="search.everywhere.popup" timestamp="1724313970032">
+    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1724319569680">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="623" y="223" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1724313970032" />
+    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1724319569680" />
   </component>
 </project>

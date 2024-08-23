@@ -347,12 +347,14 @@
               <e p="OverBattleButton.cs" t="Include" />
               <e p="RecoveryHealthButton.cs" t="Include" />
               <e p="StartBattleButton.cs" t="Include" />
+              <e p="WeaponChangerButton.cs" t="Include" />
             </e>
             <e p="Screens" t="Include">
               <e p="AbstractScreen.cs" t="Include" />
               <e p="GameOverScreen.cs" t="Include" />
             </e>
           </e>
+          <e p="WeaponChanger.cs" t="Include" />
         </e>
         <e p="Sound" t="Include" />
         <e p="Sprites" t="Include">
