@@ -1,4 +1,3 @@
-using System;
 using EnemyContent;
 using PlayerContent;
 using UnityEngine;
@@ -8,7 +7,6 @@ namespace FightContent
     public class Fight : MonoBehaviour
     {
         [SerializeField] private PlayerAttack _playerAttack;
-        [SerializeField] private MainPlayer _player;
         [SerializeField]private StageUI _stageUI;
         [SerializeField]private Spawner _spawner;
         
@@ -35,7 +33,7 @@ namespace FightContent
             if (_enemy == null)
                 return;
 
-            _player.GetComponent<PlayerAttack>().ApplyAttack();
+            _playerAttack.ApplyAttack();
             _enemy.GetComponent<EnemyAttack>().ApplyAttack();
             _stageUI.BattleStage();
         }

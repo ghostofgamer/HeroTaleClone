@@ -22,7 +22,6 @@ namespace EnemyContent
         public void Init()
         {
             SpawnChance = _enemyData.SpawnChance;
-            // _enemyHealth.Init();
         }
 
         public void InitPlayer(MainPlayer player,Spawner spawner,Awarding awarding)

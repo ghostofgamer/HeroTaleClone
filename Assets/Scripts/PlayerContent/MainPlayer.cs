@@ -11,10 +11,5 @@ namespace PlayerContent
         {
             Enemy = enemy;
         }
-
-        public void ClearEnemy()
-        {
-            Enemy = null;
-        }
     }
 }

@@ -34,8 +34,6 @@ namespace EnemyContent
         private void Die()
         {
             StartCoroutine(StartDie());
-            /*_enemy.Spawner.StartSearch();
-            _enemy.Awarding.Init(_experience);*/
         }
 
         private IEnumerator StartDie()

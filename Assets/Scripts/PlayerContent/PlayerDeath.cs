@@ -5,7 +5,6 @@ namespace PlayerContent
     public class PlayerDeath : MonoBehaviour
     {
         [SerializeField] private PlayerHealth _playerHealth;
-        [SerializeField] private PlayerAttack _playerAttack;
 
         private void OnEnable()
         {

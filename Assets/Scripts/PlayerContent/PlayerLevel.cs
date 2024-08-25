@@ -12,6 +12,7 @@ namespace PlayerContent
         private int _level = 1;
         private int _currentExperience = 0;
         private int _maxExperience = 6;
+        private float _factor = 1.5f;
 
         public event Action<int, int> ExperienceChanged;
         public event Action LevelChanged;
@@ -39,7 +40,7 @@ namespace PlayerContent
             _levelUpEffect.Play();
             _levelText.text = $"{_level.ToString()} Level";
             _currentExperience -= _maxExperience;
-            _maxExperience = Mathf.RoundToInt(_maxExperience * 1.5f);
+            _maxExperience = Mathf.RoundToInt(_maxExperience * _factor);
             ExperienceChanged?.Invoke(_currentExperience, _maxExperience);
         }
     }

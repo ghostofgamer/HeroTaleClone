@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using EnemyContent;
 using Interfaces;
@@ -45,7 +44,6 @@ public class EnemyAttack : MonoBehaviour, IAttackable
 
         while (_enemy.Player.GetComponent<PlayerHealth>().CurrentHealth > 0)
         {
-            // yield return new WaitForSeconds(_delay);
             float elapsedTime = 0;
             _imageStateIdle.fillAmount = 0;
             float targetFillAmount = 1f;
@@ -57,17 +55,15 @@ public class EnemyAttack : MonoBehaviour, IAttackable
             }
 
             _imageStateIdle.fillAmount = targetFillAmount;
-
             _stateAttack.SetActive(true);
             _stateIdle.SetActive(false);
-
             _animator.SetTrigger("Attack");
             yield return new WaitForSeconds(0.4f);
             _enemy.Player.GetComponent<PlayerHealth>().TakeDamage(_damage);
-            
             elapsedTime = 0;
             _imageStateAttack.fillAmount = 0;
             targetFillAmount = 1f;
+            
             while (elapsedTime < _delayAttack)
             {
                 elapsedTime += Time.deltaTime;

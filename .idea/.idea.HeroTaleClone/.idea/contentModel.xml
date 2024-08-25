@@ -776,6 +776,7 @@
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AbstractionContent" t="Include">
+            <e p="AbstractHealth.cs" t="Include" />
             <e p="AbstractionHealthView.cs" t="Include" />
           </e>
           <e p="Awarding.cs" t="Include" />
@@ -798,6 +799,7 @@
           <e p="PlayerContent" t="Include">
             <e p="MainPlayer.cs" t="Include" />
             <e p="PlayerAttack.cs" t="Include" />
+            <e p="PlayerBag.cs" t="Include" />
             <e p="PlayerDeath.cs" t="Include" />
             <e p="PlayerExperienceView.cs" t="Include" />
             <e p="PlayerHealth.cs" t="Include" />
@@ -829,6 +831,8 @@
           </e>
           <e p="WeaponChanger.cs" t="Include" />
           <e p="WeaponContent" t="Include">
+            <e p="BowWeapon.cs" t="Include" />
+            <e p="ScytheWeapon.cs" t="Include" />
             <e p="Weapon.cs" t="Include" />
           </e>
         </e>
