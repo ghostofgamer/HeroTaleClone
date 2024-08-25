@@ -9,7 +9,10 @@ namespace EnemyContent
         [SerializeField] private EnemyData _enemyData;
         [SerializeField]private Spawner _spawner;
         [SerializeField]private EnemyHealth _enemyHealth;
+        [SerializeField] private Awarding _awarding;
 
+        public Awarding Awarding => _awarding;
+        
         public Spawner Spawner => _spawner;
         
         public float SpawnChance { get; private set; }
@@ -22,10 +25,11 @@ namespace EnemyContent
             // _enemyHealth.Init();
         }
 
-        public void InitPlayer(MainPlayer player,Spawner spawner)
+        public void InitPlayer(MainPlayer player,Spawner spawner,Awarding awarding)
         {
             Player = player;
             _spawner = spawner;
+            _awarding = awarding;
         }
     }
 }

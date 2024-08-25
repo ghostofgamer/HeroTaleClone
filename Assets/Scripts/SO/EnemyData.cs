@@ -10,6 +10,7 @@ namespace SO
         [SerializeField] private int _damage;
         [SerializeField] private float _attackDelay;
         [SerializeField] private float _spawnChance;
+        [SerializeField] private int _experience;
 
         public int Armor => _armor;
 
@@ -20,5 +21,7 @@ namespace SO
         public float AttackDelay => _attackDelay;
 
         public float SpawnChance => _spawnChance;
+        
+        public int Experience => _experience;
     }
 }

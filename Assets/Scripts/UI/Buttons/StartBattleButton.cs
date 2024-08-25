@@ -1,13 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class StartBattleButton : AbstractionButton
+namespace UI.Buttons
 {
-    
-    
-    public override void OnClick()
+    public class StartBattleButton : AbstractionButton
     {
+    
+    
+        public override void OnClick()
+        {
         
+        }
     }
 }

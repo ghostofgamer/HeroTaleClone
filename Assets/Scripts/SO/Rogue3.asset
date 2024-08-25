@@ -17,3 +17,4 @@ MonoBehaviour:
   _damage: 3
   _attackDelay: 1
   _spawnChance: 0.1
+  _experience: 5

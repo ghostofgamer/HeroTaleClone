@@ -10,27 +10,21 @@ namespace PlayerContent
     [RequireComponent(typeof(MainPlayer))]
     public class PlayerAttack : MonoBehaviour, IAttackable
     {
-        [SerializeField] private GameObject _playerAttack;
-        [SerializeField] private GameObject _playerIdle;
         [SerializeField] private GameObject _stateIdle;
         [SerializeField] private GameObject _stateAttack;
         [SerializeField] private Image _imageStateAttack;
         [SerializeField] private Image _imageStateIdle;
-        [SerializeField] private WeaponChanger _weaponChanger;
-
         [SerializeField] private CharacterData _characterData;
-        [SerializeField] private Spawner _spawner;
-
         [SerializeField] private GameObject _gameObjectReload;
-
-
         [SerializeField] private Animator _animator;
-        [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private PlayerLevel _playerLevel;
+        [SerializeField] private ParticleSystem _criticalEffect;
 
         private float _delay;
+        private float _luck;
         private int _damage;
-
         private bool _isChange;
+        private MainPlayer _player;
 
         public bool IsAttack { get; private set; }
 
@@ -38,7 +32,15 @@ namespace PlayerContent
 
         public bool IsScytheWeapon { get; private set; }
 
-        private MainPlayer _player;
+        private void OnEnable()
+        {
+            _playerLevel.LevelChanged += UpgradeValue;
+        }
+
+        private void OnDisable()
+        {
+            _playerLevel.LevelChanged -= UpgradeValue;
+        }
 
         private void Start()
         {
@@ -47,6 +49,7 @@ namespace PlayerContent
             _player = GetComponent<MainPlayer>();
             _delay = _characterData.AttackDelay;
             _damage = _characterData.Damage;
+            _luck = _characterData.Luck;
         }
 
         public void ApplyAttack()
@@ -60,8 +63,6 @@ namespace PlayerContent
 
         public void InitWeapon(GameObject weaponAttack, GameObject weaponIdle)
         {
-            /*_playerAttack = weaponAttack;
-            _playerIdle = weaponIdle;*/
             IsScytheWeapon = !IsScytheWeapon;
             Debug.Log(IsScytheWeapon);
         }
@@ -79,10 +80,7 @@ namespace PlayerContent
                     {
                         _gameObjectReload.SetActive(true);
                         yield return new WaitForSeconds(2f);
-
                         _isChange = false;
-                        // _weaponChanger.ChangeWeapon();
-
                         _animator.SetBool("ScytheWeapon", IsScytheWeapon);
                         _gameObjectReload.SetActive(false);
                     }
@@ -93,23 +91,17 @@ namespace PlayerContent
                 }
 
                 _imageStateIdle.fillAmount = targetFillAmount;
-
-                if (IsScytheWeapon)
-                {
-                    _animator.SetTrigger("ScytheAttack");
-                }
-                else
-                {
-                    _animator.SetTrigger("BowAttack");
-                }
-
-                // _playerAttack.SetActive(true);
+                _animator.SetTrigger(IsScytheWeapon ? "ScytheAttack" : "BowAttack");
                 _stateAttack.SetActive(true);
-                // _playerIdle.SetActive(false);
                 _stateIdle.SetActive(false);
                 yield return new WaitForSeconds(0.3f);
-                _player.Enemy.GetComponent<EnemyHealth>().TakeDamage(_damage);
 
+                int random = Random.Range(0, 100);
+
+                if (random <= _luck)
+                    _criticalEffect.Play();
+
+                _player.Enemy.GetComponent<EnemyHealth>().TakeDamage(random <= _luck ? _damage * 2 : _damage);
                 elapsedTime = 0;
                 _imageStateAttack.fillAmount = 0;
                 targetFillAmount = 1f;
@@ -122,21 +114,15 @@ namespace PlayerContent
                 }
 
                 _imageStateAttack.fillAmount = targetFillAmount;
-
-                // _playerAttack.SetActive(false);
                 _stateAttack.SetActive(false);
-                // _playerIdle.SetActive(true);
                 _stateIdle.SetActive(true);
 
                 if (_isChange)
                 {
                     _gameObjectReload.SetActive(true);
                     yield return new WaitForSeconds(2f);
-
                     _isChange = false;
-                    // _weaponChanger.ChangeWeapon();
                     _animator.SetBool("ScytheWeapon", IsScytheWeapon);
-                    Debug.Log(IsScytheWeapon);
                     _gameObjectReload.SetActive(false);
                 }
             }
@@ -146,10 +132,6 @@ namespace PlayerContent
         {
             IsAttack = false;
             StopCoroutine(Attack());
-            /*_playerAttack.SetActive(false);
-            _stateAttack.SetActive(false);
-            _playerIdle.SetActive(true);
-            _stateIdle.SetActive(true);*/
         }
 
         public void Change()
@@ -159,6 +141,12 @@ namespace PlayerContent
                 _isChange = true;
                 IsScytheWeapon = !IsScytheWeapon;
             }
+        }
+
+        private void UpgradeValue()
+        {
+            _delay = Mathf.Clamp(_delay * 0.5f, 0.3f, 1f);
+            _luck = Mathf.Clamp(_luck += 1, 15, 35);
         }
     }
 }

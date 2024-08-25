@@ -17,18 +17,13 @@ namespace EnemyContent
         public event Action Died;
         public event Action<int, int> HealthChanged;
 
-        /*private void Start()
-        {
-            
-        }*/
         private void OnEnable()
         {
             Init();
             _enemyHealthView.ChangeViewHealth(_health, CurrentHealth);
-            // HealthChanged?.Invoke(_health, CurrentHealth);
         }
 
-        public void Init()
+        private void Init()
         {
             _health = _enemyData.Health;
             CurrentHealth = _health;

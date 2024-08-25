@@ -62,10 +62,9 @@ public class EnemyAttack : MonoBehaviour, IAttackable
             _stateIdle.SetActive(false);
 
             _animator.SetTrigger("Attack");
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.4f);
             _enemy.Player.GetComponent<PlayerHealth>().TakeDamage(_damage);
-
-
+            
             elapsedTime = 0;
             _imageStateAttack.fillAmount = 0;
             targetFillAmount = 1f;

@@ -1,14 +1,11 @@
-using TMPro;
+using AbstractionContent;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace PlayerContent
 {
-    public class PlayerHealthView : MonoBehaviour
+    public class PlayerHealthView : AbstractionHealthView
     {
-        [SerializeField] private Slider _slider;
         [SerializeField] private PlayerHealth _playerHealth;
-        [SerializeField] private TMP_Text _HealthValueText;
 
         private void OnEnable()
         {
@@ -18,18 +15,6 @@ namespace PlayerContent
         private void OnDisable()
         {
             _playerHealth.HealthChanged -= ChangeViewHealth;
-        }
-
-        private void ChangeViewHealth(int maxHealth, int _currentHealth)
-        {
-            _slider.maxValue = maxHealth;
-            _slider.value = _currentHealth;
-            ShowHealthValue(maxHealth, _currentHealth);
-        }
-
-        private void ShowHealthValue(int maxHealth, int _currentHealth)
-        {
-            _HealthValueText.text = _currentHealth + " / " + maxHealth;
         }
     }
 }

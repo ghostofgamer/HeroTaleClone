@@ -9,6 +9,8 @@ namespace SO
         [SerializeField] private int _health;
         [SerializeField] private int _damage;
         [SerializeField] private float _attackDelay;
+        [SerializeField] private float _luck;
+        [SerializeField] private int _level;
 
         public int Armor => _armor;
         
@@ -17,5 +19,9 @@ namespace SO
         public int Damage => _damage;
         
         public float AttackDelay => _attackDelay;
+        
+        public float Luck => _luck;
+        
+        public int Level => _level;
     }
 }

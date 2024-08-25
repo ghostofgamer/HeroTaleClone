@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using EnemyContent;
 using PlayerContent;
-using SO;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -10,13 +9,19 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField] private Enemy[] _enemies;
     [SerializeField] private GameObject _loupe;
-    [SerializeField] private GameObject _overBattleButton;
     [SerializeField] private MainPlayer _player;
-    [SerializeField]private StageUI _stageUI;
+    [SerializeField] private StageUI _stageUI;
+    [SerializeField] private Awarding _awarding;
+
+    private WaitForSeconds _waitForSeconds = new WaitForSeconds(3f);
+    private Coroutine _coroutine;
+    private float _totalChance;
+    private float _randomValue;
+    private float _cumulativeChance;
+    
+    public event Action<Enemy> EnemySpawned;
 
     public Enemy CurrentEnemy { get; private set; }
-
-    public event Action<Enemy> EnemySpawned;
 
     private void Start()
     {
@@ -24,26 +29,34 @@ public class Spawner : MonoBehaviour
             enemyData.Init();
     }
 
+    public void StartSearch()
+    {
+        _stageUI.SearchStage();
+
+        foreach (var enemy in _enemies)
+            enemy.gameObject.SetActive(false);
+        
+        if (_coroutine != null)
+            StopCoroutine(_coroutine);
+
+        _coroutine = StartCoroutine(SearchEnemy());
+    }
+
     private void SpawnEnemy()
     {
-        float totalChance = 0f;
+        _totalChance = 0f;
 
         foreach (var enemy in _enemies)
-            totalChance += enemy.SpawnChance;
+            _totalChance += enemy.SpawnChance;
 
-        if (totalChance <= 0f)
-        {
-            Debug.LogError("Total spawn chance must be greater than 0.");
-        }
-
-        float randomValue = Random.value * totalChance;
-        float cumulativeChance = 0f;
+        _randomValue = Random.value * _totalChance;
+        _cumulativeChance = 0f;
 
         foreach (var enemy in _enemies)
         {
-            cumulativeChance += enemy.SpawnChance;
+            _cumulativeChance += enemy.SpawnChance;
 
-            if (randomValue <= cumulativeChance)
+            if (_randomValue <= _cumulativeChance)
             {
                 CurrentEnemy = enemy;
                 return;
@@ -53,29 +66,18 @@ public class Spawner : MonoBehaviour
         CurrentEnemy = _enemies[0];
     }
 
-    public void StartSearch()
-    {
-        _stageUI.SearchStage();
-        foreach (var enemy in _enemies)
-            enemy.gameObject.SetActive(false);
-
-        StartCoroutine(SearchEnemy());
-    }
-
     private void Initialization()
     {
         _player.InitEnemy(CurrentEnemy);
         CurrentEnemy.gameObject.SetActive(true);
-        CurrentEnemy.InitPlayer(_player,this);
-        _player.GetComponent<PlayerAttack>().ApplyAttack();
-        CurrentEnemy.GetComponent<EnemyAttack>().ApplyAttack();
-        _stageUI.BattleStage();
+        CurrentEnemy.InitPlayer(_player, this, _awarding);
+        EnemySpawned?.Invoke(CurrentEnemy);
     }
 
     private IEnumerator SearchEnemy()
     {
         _loupe.gameObject.SetActive(true);
-        yield return new WaitForSeconds(3f);
+        yield return _waitForSeconds;
         _loupe.gameObject.SetActive(false);
         SpawnEnemy();
         Initialization();

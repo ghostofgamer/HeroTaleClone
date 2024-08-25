@@ -682,6 +682,85 @@
             </e>
             <e p="Upgrade" t="Include" />
           </e>
+          <e p="JMO Assets" t="Include">
+            <e p="Cartoon FX Remaster" t="Include">
+              <e p="CFXR Assets" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="CFXR Editor.asmdef" t="Include" />
+                  <e p="CFXR_ExpressionParser.cs" t="Include" />
+                  <e p="CFXR_MaterialInspector.cs" t="Include" />
+                  <e p="CFXR_ShaderImporter.cs" t="Include" />
+                  <e p="CFXR_ShaderPostProcessor.cs" t="Include" />
+                  <e p="CFXR_Styles.cs" t="Include" />
+                </e>
+                <e p="Graphics" t="Include" />
+                <e p="Meshes" t="Include" />
+                <e p="Misc" t="Include" />
+                <e p="Scripts" t="Include">
+                  <e p="CFXR Runtime.asmdef" t="Include" />
+                  <e p="CFXR_Effect.CameraShake.cs" t="Include" />
+                  <e p="CFXR_Effect.cs" t="Include" />
+                  <e p="CFXR_EmissionBySurface.cs" t="Include" />
+                  <e p="CFXR_ParticleText.cs" t="Include" />
+                  <e p="CFXR_ParticleTextFontAsset.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="CFXR.cginc" t="Include" />
+                  <e p="CFXR_PASSES.cginc" t="Include" />
+                  <e p="CFXR_SETTINGS.cginc" t="Include" />
+                  <e p="CFXR_URP.cginc" t="Include" />
+                </e>
+              </e>
+              <e p="CFXR Prefabs" t="Include">
+                <e p="Eerie" t="Include" />
+                <e p="Electric" t="Include" />
+                <e p="Explosions" t="Include" />
+                <e p="Fire" t="Include" />
+                <e p="Ice" t="Include" />
+                <e p="Impacts" t="Include" />
+                <e p="Light" t="Include" />
+                <e p="Liquids" t="Include" />
+                <e p="Magic Misc" t="Include" />
+                <e p="Misc" t="Include" />
+                <e p="Nature" t="Include" />
+                <e p="Sword Trails" t="Include">
+                  <e p="Fire" t="Include" />
+                  <e p="Ice" t="Include" />
+                  <e p="Plain" t="Include" />
+                </e>
+                <e p="Texts" t="Include">
+                  <e p="_Make your own text effect.txt" t="Include" />
+                </e>
+              </e>
+              <e p="Demo Assets" t="Include">
+                <e p="CFXR Demo.asmdef" t="Include" />
+                <e p="CFXR_Demo.cs" t="Include" />
+                <e p="CFXR_Demo_Rotate.cs" t="Include" />
+                <e p="CFXR_Demo_Translate.cs" t="Include" />
+                <e p="Kino Bloom" t="Include">
+                  <e p="Bloom.cs" t="Include" />
+                  <e p="Editor" t="Include">
+                    <e p="BloomEditor.cs" t="Include" />
+                    <e p="BloomGraphDrawer.cs" t="Include" />
+                    <e p="KinoBloom.Editor.asmdef" t="Include" />
+                  </e>
+                  <e p="Kino Bloom License.txt" t="Include" />
+                  <e p="KinoBloom.Runtime.asmdef" t="Include" />
+                  <e p="Shader" t="Include">
+                    <e p="Bloom.cginc" t="Include" />
+                    <e p="Bloom.shader" t="Include" />
+                  </e>
+                </e>
+                <e p="UI" t="Include" />
+              </e>
+            </e>
+            <e p="Welcome Screen" t="Include">
+              <e p="CFXR.WelcomeScreen.asmdef" t="Include" />
+              <e p="CFXR_WelcomeScreen.cs" t="Include" />
+              <e p="CFXR_WelcomeScreen.uss" t="Include" />
+              <e p="CFXR_WelcomeScreen.uxml" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="Prefabs" t="Include">
           <e p="Enemys" t="Include" />
@@ -696,6 +775,10 @@
         </e>
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="AbstractionContent" t="Include">
+            <e p="AbstractionHealthView.cs" t="Include" />
+          </e>
+          <e p="Awarding.cs" t="Include" />
           <e p="EnemyContent" t="Include">
             <e p="Enemy.cs" t="Include" />
             <e p="EnemyAttack.cs" t="Include" />
@@ -703,7 +786,9 @@
             <e p="EnemyHealth.cs" t="Include" />
             <e p="EnemyHealthView.cs" t="Include" />
           </e>
-          <e p="FightContent" t="Include" />
+          <e p="FightContent" t="Include">
+            <e p="Fight.cs" t="Include" />
+          </e>
           <e p="Initializator.cs" t="Include" />
           <e p="Interfaces" t="Include">
             <e p="IAttackable.cs" t="Include" />
@@ -714,24 +799,26 @@
             <e p="MainPlayer.cs" t="Include" />
             <e p="PlayerAttack.cs" t="Include" />
             <e p="PlayerDeath.cs" t="Include" />
+            <e p="PlayerExperienceView.cs" t="Include" />
             <e p="PlayerHealth.cs" t="Include" />
             <e p="PlayerHealthView.cs" t="Include" />
+            <e p="PlayerLevel.cs" t="Include" />
           </e>
           <e p="SO" t="Include">
             <e p="CharacterData.cs" t="Include" />
             <e p="EnemyData.cs" t="Include" />
+            <e p="WeaponData.cs" t="Include" />
           </e>
           <e p="Spawner.cs" t="Include" />
           <e p="StageUI.cs" t="Include" />
-          <e p="Test" t="Include">
-            <e p="SpawnButton.cs" t="Include" />
-          </e>
+          <e p="Test" t="Include" />
           <e p="UI" t="Include">
             <e p="Buttons" t="Include">
               <e p="AbstractionButton.cs" t="Include" />
               <e p="MapSelectionButton.cs" t="Include" />
               <e p="OverBattleButton.cs" t="Include" />
               <e p="RecoveryHealthButton.cs" t="Include" />
+              <e p="SpawnButton.cs" t="Include" />
               <e p="StartBattleButton.cs" t="Include" />
               <e p="WeaponChangerButton.cs" t="Include" />
             </e>
@@ -741,6 +828,9 @@
             </e>
           </e>
           <e p="WeaponChanger.cs" t="Include" />
+          <e p="WeaponContent" t="Include">
+            <e p="Weapon.cs" t="Include" />
+          </e>
         </e>
         <e p="Sound" t="Include" />
         <e p="Sprites" t="Include">
@@ -783,10 +873,16 @@
           </e>
         </e>
       </e>
+      <e p="CFXR.WelcomeScreen.csproj" t="IncludeRecursive" />
+      <e p="CFXRDemo.csproj" t="IncludeRecursive" />
+      <e p="CFXREditor.csproj" t="IncludeRecursive" />
+      <e p="CFXRRuntime.csproj" t="IncludeRecursive" />
       <e p="HeroTaleClone.sln" t="IncludeFlat" />
+      <e p="KinoBloom.Runtime.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="ToonyColorsPro.Demo.Editor.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

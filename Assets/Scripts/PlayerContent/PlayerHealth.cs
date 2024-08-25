@@ -9,14 +9,25 @@ namespace PlayerContent
         [SerializeField] private CharacterData _characterData;
         [SerializeField] private AudioSource _audioSource;
         [SerializeField] private ParticleSystem _damageEffect;
-        
+        [SerializeField] private PlayerLevel _playerLevel;
+
         private int _health;
-        
+
         public event Action Died;
-        
+
         public event Action<int, int> HealthChanged;
-        
+
         public int CurrentHealth { get; private set; }
+
+        private void OnEnable()
+        {
+            _playerLevel.LevelChanged += UpgradeHealth;
+        }
+
+        private void OnDisable()
+        {
+            _playerLevel.LevelChanged -= UpgradeHealth;
+        }
 
         private void Start()
         {
@@ -41,7 +52,13 @@ namespace PlayerContent
 
         public void HealHealth()
         {
-            CurrentHealth = _characterData.Health;
+            CurrentHealth = _health;
+            HealthChanged?.Invoke(_health, CurrentHealth);
+        }
+
+        private void UpgradeHealth()
+        {
+            _health += 5 * _playerLevel.Level;
             HealthChanged?.Invoke(_health, CurrentHealth);
         }
     }

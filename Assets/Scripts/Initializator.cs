@@ -1,6 +1,5 @@
 using EnemyContent;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 public class Initializator : MonoBehaviour
 {
