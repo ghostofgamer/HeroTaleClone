@@ -9,8 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d71219c134c1e3c448f301546de55b8d, type: 3}
-  m_Name: ScytheData
+  m_Script: {fileID: 11500000, guid: bc54a2cf0ca5a0b4191e7ad8312fefff, type: 3}
+  m_Name: Ghost
   m_EditorClassIdentifier: 
-  _delay: 1
-  _damage: 4
+  _armor: 0
+  _health: 6
+  _damage: 2
+  _attackDelay: 1
+  _spawnChance: 30
+  _experience: 5

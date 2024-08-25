@@ -47,6 +47,7 @@ public class EnemyAttack : MonoBehaviour, IAttackable
             float elapsedTime = 0;
             _imageStateIdle.fillAmount = 0;
             float targetFillAmount = 1f;
+            
             while (elapsedTime < _delay)
             {
                 elapsedTime += Time.deltaTime;

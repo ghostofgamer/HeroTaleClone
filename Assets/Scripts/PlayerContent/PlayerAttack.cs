@@ -24,10 +24,16 @@ namespace PlayerContent
 
         private float _delay;
         private float _luck;
-        private int _damage;
         private bool _isChange;
         private MainPlayer _player;
         private Weapon _weapon;
+        private int _factorDamage = 2;
+        private float _maxDelay = 1f;
+        private float _minDelay = 0.3f;
+        private float _factorDelay = 0.85f;
+        private float _minLuck = 15f;
+        private float _maxLuck = 35f;
+        private float _factorLuck = 1;
 
         private bool IsAttack { get; set; }
 
@@ -52,7 +58,6 @@ namespace PlayerContent
             _animator.SetBool("ScytheWeapon", IsScytheWeapon);
             _player = GetComponent<MainPlayer>();
             _delay = _characterData.AttackDelay;
-            _damage = _characterData.Damage;
             _luck = _characterData.Luck;
         }
 
@@ -93,13 +98,13 @@ namespace PlayerContent
             _animator.SetTrigger(IsScytheWeapon ? "ScytheAttack" : "BowAttack");
             _stateAttack.SetActive(true);
             _stateIdle.SetActive(false);
-            // yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.3f);
             int random = Random.Range(0, 100);
 
             if (random <= _luck)
                 _criticalEffect.Play();
 
-            _player.Enemy.GetComponent<EnemyHealth>().TakeDamage(random <= _luck ? _weapon.Damage * 2 : _weapon.Damage);
+            _player.Enemy.GetComponent<EnemyHealth>().TakeDamage(random <= _luck ? _weapon.Damage * _factorDamage : _weapon.Damage);
             yield return StartCoroutine(FillImage(_imageStateAttack, _weapon.DelayAttack, IsAttackState));
             IsAttackState = false;
             _stateAttack.SetActive(false);
@@ -133,14 +138,14 @@ namespace PlayerContent
             yield return new WaitForSeconds(2f);
             _isChange = false;
             _animator.SetBool("ScytheWeapon", IsScytheWeapon);
-            _weapon =  _playerBag.GetWeapon(IsScytheWeapon ? 0 : 1);
+            _weapon = _playerBag.GetWeapon(IsScytheWeapon ? 0 : 1);
             _gameObjectReload.SetActive(false);
         }
 
         private void UpgradeValue()
         {
-            _delay = Mathf.Clamp(_delay * 0.5f, 0.3f, 1f);
-            _luck = Mathf.Clamp(_luck += 1, 15, 35);
+            _delay = Mathf.Clamp(_delay * _factorDelay, _minDelay, _maxDelay);
+            _luck = Mathf.Clamp(_luck += _factorLuck, _minLuck, _maxLuck);
         }
     }
 }

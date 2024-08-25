@@ -13,8 +13,8 @@ EditorBuildSettings:
     guid: c4652a0fd6622bc4e845ce6960cca096
   - enabled: 1
     path: Assets/Scenes/2SceneBattle.unity
-    guid: 02eec5763812736458184574402f166b
+    guid: cde79cc38fb57c44a83b6354a8dba8e2
   - enabled: 1
     path: Assets/Scenes/3SceneBattle.unity
-    guid: 0102429819597ca46bf3b2ba85d66031
+    guid: 72d7ccef66725674ea08f2fd69fc1a43
   m_configObjects: {}
