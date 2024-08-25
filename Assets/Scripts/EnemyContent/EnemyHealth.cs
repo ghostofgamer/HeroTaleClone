@@ -8,6 +8,8 @@ namespace EnemyContent
     {
         [SerializeField] private EnemyData _enemyData;
         [SerializeField] private EnemyHealthView _enemyHealthView;
+        [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private ParticleSystem _damageEffect;
 
         private int _health;
         public int CurrentHealth { get; private set; }
@@ -22,7 +24,7 @@ namespace EnemyContent
         private void OnEnable()
         {
             Init();
-            _enemyHealthView.ChangeViewHealth(_health,CurrentHealth);
+            _enemyHealthView.ChangeViewHealth(_health, CurrentHealth);
             // HealthChanged?.Invoke(_health, CurrentHealth);
         }
 
@@ -38,6 +40,8 @@ namespace EnemyContent
                 return;
 
             CurrentHealth -= (damage - _enemyData.Armor);
+            _audioSource.PlayOneShot(_audioSource.clip);
+            _damageEffect.Play();
             HealthChanged?.Invoke(_health, CurrentHealth);
 
             if (CurrentHealth <= 0)

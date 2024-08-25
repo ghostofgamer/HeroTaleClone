@@ -17,24 +17,25 @@ namespace PlayerContent
         [SerializeField] private Image _imageStateAttack;
         [SerializeField] private Image _imageStateIdle;
         [SerializeField] private WeaponChanger _weaponChanger;
-        
+
         [SerializeField] private CharacterData _characterData;
         [SerializeField] private Spawner _spawner;
 
         [SerializeField] private GameObject _gameObjectReload;
 
-        
-        [SerializeField]private Animator _animator;
+
+        [SerializeField] private Animator _animator;
+        [SerializeField] private AudioSource _audioSource;
 
         private float _delay;
         private int _damage;
-        
+
         private bool _isChange;
-        
-        public bool IsAttack{ get; private set; }
-        
-        public bool IsReload{ get; private set; }
-        
+
+        public bool IsAttack { get; private set; }
+
+        public bool IsReload { get; private set; }
+
         public bool IsScytheWeapon { get; private set; }
 
         private MainPlayer _player;
@@ -42,7 +43,7 @@ namespace PlayerContent
         private void Start()
         {
             IsScytheWeapon = true;
-            _animator.SetBool("ScytheWeapon",IsScytheWeapon);
+            _animator.SetBool("ScytheWeapon", IsScytheWeapon);
             _player = GetComponent<MainPlayer>();
             _delay = _characterData.AttackDelay;
             _damage = _characterData.Damage;
@@ -77,12 +78,12 @@ namespace PlayerContent
                     if (_isChange)
                     {
                         _gameObjectReload.SetActive(true);
-                        yield return  new WaitForSeconds(2f);
+                        yield return new WaitForSeconds(2f);
 
                         _isChange = false;
                         // _weaponChanger.ChangeWeapon();
-                       
-                        _animator.SetBool("ScytheWeapon",IsScytheWeapon);
+
+                        _animator.SetBool("ScytheWeapon", IsScytheWeapon);
                         _gameObjectReload.SetActive(false);
                     }
 
@@ -101,7 +102,7 @@ namespace PlayerContent
                 {
                     _animator.SetTrigger("BowAttack");
                 }
-                
+
                 // _playerAttack.SetActive(true);
                 _stateAttack.SetActive(true);
                 // _playerIdle.SetActive(false);
@@ -112,7 +113,7 @@ namespace PlayerContent
                 elapsedTime = 0;
                 _imageStateAttack.fillAmount = 0;
                 targetFillAmount = 1f;
-                
+
                 while (elapsedTime < _delay)
                 {
                     elapsedTime += Time.deltaTime;
@@ -121,7 +122,7 @@ namespace PlayerContent
                 }
 
                 _imageStateAttack.fillAmount = targetFillAmount;
-                
+
                 // _playerAttack.SetActive(false);
                 _stateAttack.SetActive(false);
                 // _playerIdle.SetActive(true);
@@ -130,11 +131,11 @@ namespace PlayerContent
                 if (_isChange)
                 {
                     _gameObjectReload.SetActive(true);
-                    yield return  new WaitForSeconds(2f);
+                    yield return new WaitForSeconds(2f);
 
                     _isChange = false;
                     // _weaponChanger.ChangeWeapon();
-                    _animator.SetBool("ScytheWeapon",IsScytheWeapon);
+                    _animator.SetBool("ScytheWeapon", IsScytheWeapon);
                     Debug.Log(IsScytheWeapon);
                     _gameObjectReload.SetActive(false);
                 }
@@ -153,8 +154,11 @@ namespace PlayerContent
 
         public void Change()
         {
-            _isChange = true;
-            IsScytheWeapon = !IsScytheWeapon;
+            if (!_isChange)
+            {
+                _isChange = true;
+                IsScytheWeapon = !IsScytheWeapon;
+            }
         }
     }
 }

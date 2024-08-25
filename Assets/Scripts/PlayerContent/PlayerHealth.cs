@@ -7,7 +7,9 @@ namespace PlayerContent
     public class PlayerHealth : MonoBehaviour
     {
         [SerializeField] private CharacterData _characterData;
-
+        [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private ParticleSystem _damageEffect;
+        
         private int _health;
         
         public event Action Died;
@@ -29,6 +31,8 @@ namespace PlayerContent
                 return;
 
             CurrentHealth -= (damage - _characterData.Armor);
+            _audioSource.PlayOneShot(_audioSource.clip);
+            _damageEffect.Play();
             HealthChanged?.Invoke(_health, CurrentHealth);
 
             if (CurrentHealth <= 0)
