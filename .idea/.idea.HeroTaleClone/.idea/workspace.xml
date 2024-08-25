@@ -3,19 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="eab24c28-ae08-44a0-96a2-074a5767ee1c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HeroTaleClone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HeroTaleClone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetsDownloads/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations/Rogue_01.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetsDownloads/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations/Rogue_01.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetsDownloads/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations/Rogue_attack_01.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetsDownloads/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations/Rogue_attack_01.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetsDownloads/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations/Rogue_death_01.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetsDownloads/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations/Rogue_death_01.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetsDownloads/omiStudio/Enemy Cow/Art/Animations/Cow/Cow1/AnimationCow1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetsDownloads/omiStudio/Enemy Cow/Art/Animations/Cow/Cow1/AnimationCow1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetsDownloads/omiStudio/Enemy Cow/Art/Animations/Cow/Cow2/AnimationCow2.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetsDownloads/omiStudio/Enemy Cow/Art/Animations/Cow/Cow2/AnimationCow2.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/1SceneBattle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1SceneBattle.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2SceneBattle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2SceneBattle.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/2SceneBattle.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/2SceneBattle.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/3SceneBattle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3SceneBattle.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3SceneBattle.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3SceneBattle.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyContent/EnemyAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyContent/EnemyAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerContent/PlayerAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/BowData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/BowData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/ScytheData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/ScytheData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneRelax.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneRelax.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Ghost.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/Ghost.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Ghost1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/Ghost1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SO/Zombie.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SO/Zombie.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/BackGround/Purgatory1-1920x1080-b787a2e7277b8919990a666e745a59a0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/BackGround/Purgatory1-1920x1080-b787a2e7277b8919990a666e745a59a0.jpg.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +147,7 @@
       <workItem from="1724144750869" duration="15348000" />
       <workItem from="1724313528252" duration="10991000" />
       <workItem from="1724421194412" duration="2330000" />
-      <workItem from="1724573407777" duration="21081000" />
+      <workItem from="1724573407777" duration="21813000" />
     </task>
     <servers />
   </component>
